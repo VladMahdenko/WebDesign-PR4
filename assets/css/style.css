@@ -1,0 +1,206 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.header {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none; /* прибираємо вигляд списку за замовчування */
+  justify-content: flex-start;
+  font-size: 14px;
+  align-items: center;
+}
+
+.nav > li {
+  margin-left: 15px; /* всім дочірнім елементам класу nav відступ праворуч 15px*/
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #202020;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.logo span {
+  font-size: 24px;
+  color: #202020;
+  font-weight: 700;
+}
+
+.nav .button {
+  background: #5b9aff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 15px;
+  border: none;
+}
+
+.page-top {
+  border-top: 1px solid #c2c2c2;
+}
+
+.page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page h2 {
+  position: absolute;
+  font-size: 14 px;
+  font-weight: 300;
+  color: #c2c2c2;
+  top: -37px; /* це значення підберіть використовуючи dev tools */
+  background: #ffffff;
+  padding: 0 20px;
+}
+
+.page .button {
+  background: #5b9aff;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 30px;
+  font-weight: normal;
+  font-size: 24px;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.page h1 {
+  font-size: 48px;
+  color: #202020;
+  font-weight: bold;
+}
+.page .hero-text {
+  width: 741px;
+  font-size: 32px;
+  color: #4f4f4f;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.departments {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 20px;
+}
+
+.page h3 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.page p {
+  font-size: 14px;
+  color: #b2b2b2;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.dep-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dep-item .img {
+  flex-basis: 140px;
+  text-align: center;
+}
+.dep-item .text {
+  flex-basis: calc(100% - 140px);
+}
+
+.page-bottom {
+  border-top: 1px solid #c2c2c2;
+}
+
+.page-bottom h3 {
+  font-size: 28px;
+  color: #202020;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.page-bottom p {
+  font-size: 14px;
+  color: #b2b2b2;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.lecturer-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lecturer-item .img {
+  flex-basis: 133px;
+  text-align: center;
+}
+
+.lecturer-item .text {
+  flex-basis: calc(100% - 100px);
+}
+
+.lecturers {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social {
+  display: flex;
+  list-style-type: none;
+}
+.social li {
+  margin-right: 20px;
+}
+.social a {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 24px;
+}
